@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// h6{
+//     color: red;
+// }
+
+.main-blog {
+    background-color: #282828;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    .title {    
+      h6{
+        color: #ff6600;
+      }
+    }
+    .blog-left {
+      width: 70%;
+    }
+    .blog-right {
+      width: 30%;
+    }
+  }
+}

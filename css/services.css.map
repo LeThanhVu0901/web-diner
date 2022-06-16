@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/404.scss"
+        "../scss/pages/services.scss"
     ],
     "names": [],
-    "file": "404.css"
+    "file": "services.css"
 }

@@ -1,1 +1,178 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+.header {
+  background-color: #ff6600;
+  min-height: 700px;
+}
+
+.header .main .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  grid-gap: 20px;
+  padding: 40px 0 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .main .row .logo a {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header .main .row .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .main .row .menu .search-bar .search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .main .row .menu .search-bar .search .search__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  color: #161c2db3;
+  border: none;
+  font-weight: 400;
+  border-radius: 5px;
+  position: relative;
+  right: 0;
+  background: #fff;
+  outline: 0;
+  border: 1px solid #fff;
+}
+
+.header .main .row .menu .search-bar .search .search__icon {
+  position: absolute;
+  right: 20px;
+  font-size: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.header .main .row .menu .mode .navigation {
+  display: block;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch input {
+  display: none;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container {
+  width: 24px;
+  height: 24px;
+  padding: 1px 0;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container i.fa-sun-bright {
+  display: block;
+  color: #eee;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container i.fa-moon {
+  display: block;
+  color: #eee;
+  font-size: 23px;
+}
+
+.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container .fa-moon::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  top: 8px;
+  left: 2px;
+}
+
+.header .main .row .menu .menu-btn button {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
+}
+
+.header .main .infor {
+  max-width: 600px;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.header .main .infor h3 {
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header .main .infor p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.header .main .infor a {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 40px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.header .main .infor a:hover {
+  color: #ff6600;
+  background-color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+/*# sourceMappingURL=home.css.map */

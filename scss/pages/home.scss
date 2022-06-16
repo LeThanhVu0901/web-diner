@@ -1,0 +1,13 @@
+@import "../layouts/header";
+@import "../layouts/footer";
+@import "../themes/mixins";
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+}

@@ -165,6 +165,145 @@
   transition: all 1s;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-style {
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ff6600;
+  border: 2px solid #ff6600;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ff6600;
+  border: 2px solid #ff6600;
+  opacity: 0.8;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color);
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer {
+  background-color: #000000;
+}
+
+.footer a.navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0;
+}
+
+.footer a.navbar-brand:hover {
+  color: #ff6600;
+}
+
+.footer h6.footer-title {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+}
+
+.footer p {
+  color: #a5a2a1;
+  font-size: 18px;
+}
+
+.footer form {
+  margin-top: 25px;
+  position: relative;
+}
+
+.footer input {
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+  color: #ff6600;
+  border-radius: 6px;
+}
+
+.footer .footer-list-29 ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer .footer-list-29 ul li a {
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+}
+
+.footer .footer-list-29 ul li a:hover {
+  color: #ff6600;
+}
+
+.footer .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .container .row .footer-1 .social-footer a {
+  margin-right: 10px;
+  color: #ff6600;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  background: #232220;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .container .row .footer-1 .social-footer a:hover {
+  background: #ff6600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+
 html {
   padding: 0;
   margin: 0;

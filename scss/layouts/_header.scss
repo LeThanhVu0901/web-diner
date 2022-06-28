@@ -1,13 +1,39 @@
 @import "../themes/variables";
+@import "../themes/mixins";
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Quicksand", sans-serif;
+}
+h6 {
+  font-family: "Pacifico", cursive;
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+}
+
+h3 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
 
 .header {
-  background-color: $fontColor;
-  //   background-image: url(../img/backgroung_header.jpeg);
-  //   background-size: cover;
-  //   background-repeat: no-repeat, no-repeat, no-repeat;
-  //   background-position: initial;
-  //   background-attachment: fixed;
-    min-height: 700px;
+  // background-color: $fontColor;
+  background-image: linear-gradient(to right, #ff6600, #05030033),
+    url(../../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-attachment: fixed;
+  min-height: 700px;
   .main {
     .row {
       display: grid;
@@ -71,8 +97,6 @@
                   display: none;
                 }
                 .mode-container {
-                  width: 24px;
-                  height: 24px;
                   padding: 1px 0;
                   i.fa-sun-bright {
                     display: block;
@@ -86,8 +110,6 @@
                   .fa-moon::after {
                     content: "";
                     position: absolute;
-                    width: 12px;
-                    height: 18px;
                     top: 8px;
                     left: 2px;
                   }
@@ -126,7 +148,7 @@
         line-height: 28px;
         color: #fff;
       }
-      a {
+      .btn {
         background: transparent;
         border: 2px solid #fff;
         color: #fff;
@@ -134,9 +156,9 @@
         font-weight: 700;
         margin-top: 30px;
         &:hover {
-            color: $fontColor;
-            background-color: #fff;
-            transition: all 1s;
+          color: $fontColor;
+          background-color: #fff;
+          transition: all 1s;
         }
       }
     }

@@ -128,6 +128,36 @@ h3 {
             font-size: 1.95em;
             padding: 0 8px;
           }
+          // menu button
+          .menu-item {
+            display: none;
+            background-color: rgba($color: #131211, $alpha: 0.7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 20;
+            .menu-list {
+              margin-top: 9%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              line-height: 50px;
+              a {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover {
+                  color: #ff6600;
+                }
+              }
+            }
+          }
+          &:focus-within .menu-item {
+            display: block;
+          }
         }
       }
     }

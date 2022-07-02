@@ -626,6 +626,12 @@ html {
   display: flex;
 }
 
+.review .row .col-right .item .subscribe .subscribe-cat-gd:hover i {
+  color: #e7b716;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
 .review .row .col-right .item .subscribe i {
   color: #ff6600;
   background-color: white;
@@ -648,13 +654,6 @@ html {
   margin-bottom: 15px;
   font-size: 20px;
   text-decoration: none;
-}
-
-.review .row .col-right .item .subscribe:hover i {
-  color: #ffc600;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 .categories {

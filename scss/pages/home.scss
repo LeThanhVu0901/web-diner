@@ -122,8 +122,14 @@ html {
           font-size: 18px;
           line-height: 28px;
         }
-        .subscribe {
+        .subscribe {   
           display: flex;
+          .subscribe-cat-gd {
+            &:hover i{
+              color: #e7b716;
+              transition: all ease-in 0.5s;
+            }
+          }
           i {
             color: #ff6600;
             background-color: white;
@@ -142,11 +148,6 @@ html {
             margin-bottom: 15px;
             font-size: 20px;
             text-decoration: none;
-          }
-          &:hover i {
-            color: #ffc600;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
           }
         }
       }

@@ -310,19 +310,14 @@ p {
   color: #fff;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background: #232220;
-  color: #c2d0da;
-  font-family: "Quicksand", sans-serif;
-}
-
-* {
-  font-family: "Quicksand", sans-serif;
-  margin: 0;
-  padding: 0;
+.title-sunny {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ff6600;
+  display: block;
+  font-family: "Pacifico", cursive;
 }
 
 h1,
@@ -337,30 +332,289 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
-.container {
-  max-width: 1200px;
+body,
+html {
+  color: #c2d0da;
 }
 
-.error {
+li {
+  list-style: none;
+}
+
+.radius-image {
+  border-radius: 5px;
+}
+
+.title-w31 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+ul.page-pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ul.page-pagination li span.current {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  border: 1px solid #ff6600;
+  border-radius: 5px;
+  font-weight: 700;
+  background: #ff6600;
+  -webkit-transition: background-color 0.15s linear, color 0.15s linear;
+  transition: background-color 0.15s linear, color 0.15s linear;
+}
+
+ul.page-pagination li a.page-numbers,
+ul.page-pagination li a.next {
+  display: block;
+  padding: 8px 16px;
+  background-color: #282828;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-transition: background-color 0.15s linear, color 0.15s linear;
+  transition: background-color 0.15s linear, color 0.15s linear;
+}
+
+ul.page-pagination li a.page-numbers:hover,
+ul.page-pagination li a.next:hover {
   background-color: #232220;
+  color: #ff6600;
+  border: 1px solid #ff6600;
 }
 
-.error .container h1 {
-  color: white;
-  font-size: 130px;
-  font-weight: 900;
-}
-
-.form-inline {
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c2d0da;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+}
+
+.sidebar-widget {
+  margin-bottom: 40px;
+  padding: 40px 30px;
+  background: #232220;
+  border-radius: 5px;
+}
+
+.sidebar-widget .title-left {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+.sidebar-widget article.post-recipe {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.sidebar-widget article.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+  grid-gap: 15px;
+  margin-bottom: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=404.css.map */
+
+.sidebar-widget article.post img {
+  border-radius: 5px;
+}
+
+.sidebar-widget .text-small a {
+  display: block;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #eee;
+  margin-top: 10px;
+}
+
+.sidebar-widget .text a {
+  font-size: 20px;
+  line-height: 28px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #eee;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar-widget .blog-cat li a {
+  position: relative;
+  color: #c2d0da;
+  font-size: 19px;
+  font-weight: 500;
+  display: block;
+  padding: 10px 15px 10px 20px;
+}
+
+.sidebar-widget .blog-cat li a:hover {
+  color: #ff6600;
+}
+
+.blogpost {
+  background-color: #282828;
+}
+
+.blogpost .card {
+  position: relative;
+  word-wrap: break-word;
+  background-color: transparent;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0;
+}
+
+.blogpost .card-header {
+  border: none;
+}
+
+.blogpost .post-pos {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.blogpost a.receipe {
+  background: #ff6600;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+.blogpost .meta-info {
+  opacity: 1;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.blogpost .p-meta-info {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blogpost .p-meta-info a {
+  font-weight: 700;
+  color: #eee;
+  letter-spacing: 0.02em;
+}
+
+.blogpost .p-meta-info img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.blogpost a.blog-desc {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #eee;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.blogpost .p-footer {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogpost a.post-img-anchor {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.blogpost a.read {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #eee;
+  opacity: 0.9;
+}
+
+.blogpost a.read:hover {
+  color: #ff6600;
+}
+/*# sourceMappingURL=blog.css.map */

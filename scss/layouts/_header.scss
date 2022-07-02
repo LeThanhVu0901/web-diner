@@ -1,5 +1,5 @@
 @import "../themes/variables";
-
+@import "../themes/mixins";
 .header {
   background-color: $fontColor;
   //   background-image: url(../img/backgroung_header.jpeg);
@@ -7,7 +7,7 @@
   //   background-repeat: no-repeat, no-repeat, no-repeat;
   //   background-position: initial;
   //   background-attachment: fixed;
-    min-height: 700px;
+  min-height: 700px;
   .main {
     .row {
       display: grid;
@@ -56,88 +56,93 @@
               cursor: pointer;
             }
           }
+          @include mobile-sm {
+          }
         }
-        .mode {
-          .navigation {
-            display: block;
-            .theme-switch-wrapper {
-              display: flex;
-              align-items: center;
-              .theme-switch {
-                display: inline-block;
-                position: relative;
-                margin: 0;
-                input {
-                  display: none;
+        @include mobile-sm{
+          display: none;
+        }
+      }
+      .mode {
+        .navigation {
+          display: block;
+          .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            .theme-switch {
+              display: inline-block;
+              position: relative;
+              margin: 0;
+              input {
+                display: none;
+              }
+              .mode-container {
+                width: 24px;
+                height: 24px;
+                padding: 1px 0;
+                i.fa-sun-bright {
+                  display: block;
+                  color: #eee;
                 }
-                .mode-container {
-                  width: 24px;
-                  height: 24px;
-                  padding: 1px 0;
-                  i.fa-sun-bright {
-                    display: block;
-                    color: #eee;
-                  }
-                  i.fa-moon {
-                    display: block;
-                    color: #eee;
-                    font-size: 23px;
-                  }
-                  .fa-moon::after {
-                    content: "";
-                    position: absolute;
-                    width: 12px;
-                    height: 18px;
-                    top: 8px;
-                    left: 2px;
-                  }
+                i.fa-moon {
+                  display: block;
+                  color: #eee;
+                  font-size: 23px;
+                }
+                .fa-moon::after {
+                  content: "";
+                  position: absolute;
+                  width: 12px;
+                  height: 18px;
+                  top: 8px;
+                  left: 2px;
                 }
               }
             }
           }
         }
-        .menu-btn {
-          button {
-            outline: none;
-            border: none;
-            background: none;
-            text-align: center;
-            color: #fbfdfb;
-            font-size: 1.95em;
-            padding: 0 8px;
-          }
+      }
+      .menu-btn {
+        button {
+          outline: none;
+          border: none;
+          background: none;
+          text-align: center;
+          color: #fbfdfb;
+          font-size: 1.95em;
+          padding: 0 8px;
         }
       }
     }
-    .infor {
-      max-width: 600px;
-      text-align: left;
-      margin-top: 100px;
-      h3 {
-        font-size: 54px;
-        line-height: 64px;
-        font-weight: 600;
-        text-transform: capitalize;
-        color: #fff;
-        font-family: "Quicksand", sans-serif;
-      }
-      p {
-        font-size: 16px;
-        line-height: 28px;
-        color: #fff;
-      }
-      a {
-        background: transparent;
-        border: 2px solid #fff;
-        color: #fff;
-        padding: 15px 40px;
-        font-weight: 700;
-        margin-top: 30px;
-        &:hover {
-            color: $fontColor;
-            background-color: #fff;
-            transition: all 1s;
-        }
+  }
+  .infor {
+    max-width: 600px;
+    text-align: left;
+    margin-top: 100px;
+    h3 {
+      font-size: 54px;
+      line-height: 64px;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #fff;
+      font-family: "Quicksand", sans-serif;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      color: #fff;
+    }
+    a {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 15px 40px;
+      font-weight: 700;
+      margin-top: 30px;
+      &:hover {
+        color: $fontColor;
+        background-color: #fff;
+        transition: all 1s;
       }
     }
   }

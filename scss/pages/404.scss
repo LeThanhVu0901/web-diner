@@ -2,31 +2,51 @@
 @import "../layouts/footer";
 @import "../themes/mixins";
 
+body,
 html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  background: $backgroundColor;
+  color: $fontGrey;
+  font-family: "Quicksand", sans-serif;
 }
-*{
-    font-family: 'Quicksand', sans-serif;
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: $headerColor;
+  font-family: "Quicksand", sans-serif;
 }
 
 .container {
-    max-width: 1200px;
-
+  max-width: 1200px;
 }
 
-.error{
-    background-color: #232220;
-    .container{
-        h1{
-            background-color: black;
-            color: white;
-            font-size: 130px;
-            font-weight: 900;
-            
-        }
+.error {
+  background-color: #232220;
+  .container {
+    h1 {
+      color: white;
+      font-size: 130px;
+      font-weight: 900;
     }
+  }
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }

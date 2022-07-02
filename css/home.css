@@ -69,11 +69,17 @@
   cursor: pointer;
 }
 
-.header .main .row .menu .mode .navigation {
+@media (max-width: 768px) {
+  .header .main .row .menu {
+    display: none;
+  }
+}
+
+.header .main .row .mode .navigation {
   display: block;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper {
+.header .main .row .mode .navigation .theme-switch-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,34 +88,34 @@
           align-items: center;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch {
+.header .main .row .mode .navigation .theme-switch-wrapper .theme-switch {
   display: inline-block;
   position: relative;
   margin: 0;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch input {
+.header .main .row .mode .navigation .theme-switch-wrapper .theme-switch input {
   display: none;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container {
+.header .main .row .mode .navigation .theme-switch-wrapper .theme-switch .mode-container {
   width: 24px;
   height: 24px;
   padding: 1px 0;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container i.fa-sun-bright {
+.header .main .row .mode .navigation .theme-switch-wrapper .theme-switch .mode-container i.fa-sun-bright {
   display: block;
   color: #eee;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container i.fa-moon {
+.header .main .row .mode .navigation .theme-switch-wrapper .theme-switch .mode-container i.fa-moon {
   display: block;
   color: #eee;
   font-size: 23px;
 }
 
-.header .main .row .menu .mode .navigation .theme-switch-wrapper .theme-switch .mode-container .fa-moon::after {
+.header .main .row .mode .navigation .theme-switch-wrapper .theme-switch .mode-container .fa-moon::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -118,7 +124,7 @@
   left: 2px;
 }
 
-.header .main .row .menu .menu-btn button {
+.header .main .row .menu-btn button {
   outline: none;
   border: none;
   background: none;
@@ -128,13 +134,13 @@
   padding: 0 8px;
 }
 
-.header .main .infor {
+.header .infor {
   max-width: 600px;
   text-align: left;
   margin-top: 100px;
 }
 
-.header .main .infor h3 {
+.header .infor h3 {
   font-size: 54px;
   line-height: 64px;
   font-weight: 600;
@@ -143,13 +149,13 @@
   font-family: "Quicksand", sans-serif;
 }
 
-.header .main .infor p {
+.header .infor p {
   font-size: 16px;
   line-height: 28px;
   color: #fff;
 }
 
-.header .main .infor a {
+.header .infor a {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
@@ -158,7 +164,7 @@
   margin-top: 30px;
 }
 
-.header .main .infor a:hover {
+.header .infor a:hover {
   color: #ff6600;
   background-color: #fff;
   -webkit-transition: all 1s;

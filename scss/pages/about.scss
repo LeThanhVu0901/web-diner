@@ -1,0 +1,284 @@
+@import "../layouts/header_2";
+@import "../layouts/footer";
+@import "../themes/mixins";
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+.feature {
+  padding: 70px 0 50px 0;
+  .main {
+    .row-top {
+      display: flex;
+      align-items: center;
+      .col-left {
+        img {
+          width: 100%;
+          display: block;
+          border-radius: 5px;
+        }
+      }
+      .col-right {
+        padding-left: 30px !important;
+        padding-right: 15px !important;
+        p {
+          color: #161c2db3;
+          font-size: 18px;
+          font-family: "Quicksand", sans-serif;
+          margin: 30px 0;
+        }
+        .btn {
+          padding: 12px 45px;
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 700;
+          transition: 0.3s ease-in;
+          border-radius: 8px;
+          border: 2px solid transparent;
+          color: #fff;
+          background-color: #ff6600;
+          &:hover {
+            opacity: 0.8;
+            transition: all 0.5s;
+          }
+        }
+      }
+      @include tablet-md {
+        display: block;
+      }
+      @include mobile-sm {
+        display: block;
+      }
+    }
+    .row-bottom {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      h4 {
+        color: #ff6600;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 600;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        &:hover {
+          color: #ffc600;
+        }
+      }
+      p {
+        font-size: 18px;
+        color: #161c2db3;
+        line-height: 28px;
+      }
+      @include mobile-sm {
+        display: block;
+      }
+    }
+  }
+}
+
+.skills {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  .container {
+    .main {
+      .row {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        .col {
+          p {
+            font-size: 18px;
+            line-height: 28px;
+            color: #161c2db3;
+          }
+          img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+          }
+          .skill-bars {
+            .proress-info {
+              h6 {
+                font-size: 18px;
+                color: #232121;
+                margin-bottom: 10px;
+                font-weight: 700;
+                font-family: "Quicksand", sans-serif;
+              }
+              .proress {
+                background-color: #161c2db3;
+                height: 6px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                .proress-percent {
+                  background-color: #ff6600;
+                  height: 6px;
+                }
+              }
+            }
+          }
+        }
+        @include tablet-md {
+          display: block;
+        }
+        @include mobile-sm {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.team {
+  padding: 100px 0;
+  .container {
+    .header-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .row {
+      display: flex;
+      .col {
+        .team-member {
+          position: relative;
+          text-align: center;
+          img {
+            width: 100%;
+            border-radius: 8px;
+          }
+          .icon-team {
+            .team-details {
+              margin: 0 auto;
+              opacity: 0;
+              position: absolute;
+              bottom: 25%;
+              left: 0;
+              overflow: hidden;
+              width: 100%;
+              z-index: 2;
+              transition: all 0.4s ease-in-out;
+              .socials {
+                a {
+                  margin-right: 5px;
+                  text-decoration: none;
+                  i {
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 15px;
+                    border-radius: 50%;
+                    text-align: center;
+                    transition: all 0.3s ease 0s;
+                    background-color: #9d9d9d80;
+                    &:hover {
+                      color: #ff6600;
+                      background-color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .team-title {
+            margin: 25px 0 0;
+            font-size: 24px;
+            color: #232121;
+            font-weight: 700;
+            text-decoration: none;
+            display: block;
+          }
+          p {
+            color: #5b606c;
+            font-size: 18px;
+            font-family: "Quicksand", sans-serif;
+          }
+          &:hover .team-details {
+            opacity: 1;
+          }
+        }
+        &:hover .team-title {
+          color: #ff6600;
+        }
+      }
+      @include mobile-sm {
+        display: block;
+      }
+    }
+  }
+}
+
+.video {
+  display: block;
+  .history-info {
+    background: url(../../img/review.jpeg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    align-items: center;
+    min-height: 500px;
+  }
+  .overlay {
+    content: "";
+    background: #100f1399;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  .video-content {
+    span {
+      i {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+        padding-left: 2px;
+        text-align: center;
+        line-height: 76px;
+        border-radius: 50%;
+        transition: 0.3s ease-in-out;
+        -webkit-animation: ripple 1s linear infinite;
+        animation: ripple 1s linear infinite;
+        color: #ff6600;
+        border: transparent;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ff6600;
+  z-index: 10;
+  &:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+}

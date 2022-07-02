@@ -1,3 +1,6 @@
+@import "../themes/_variables";
+@import "../themes/_mixins";
+
 .footer {
   background-color: black;
   .container {
@@ -32,6 +35,9 @@
               background-color: #ff6600;
               transition: all ease 0.5s;
             }
+          }
+          @include mobile-sm {
+            text-align: center;
           }
         }
         .footer-title {
@@ -88,6 +94,13 @@
           }
         }
       }
+      @include mobile-sm {
+        text-align: center;
+        display: block;
+      }
+      @include tablet-md {
+        text-align: center;
+      }
     }
     .footer-bottom {
       margin-top: 70px;
@@ -114,6 +127,14 @@
             text-decoration: none;
           }
         }
+  
+      }
+      @include tablet-md {
+        text-align: center;
+      }
+      @include mobile-sm {
+        display: block;
+        text-align: center;
       }
     }
   }
@@ -129,6 +150,12 @@
       border-radius: 5px;
       align-items: center;
       min-height: 500px;
+      @include tablet-md {
+        min-height: 500px;
+      }
+      @include mobile-sm {
+        min-height: 250px;
+      }
     }
     .overlay {
       content: "";

@@ -27,13 +27,13 @@ h3 {
 
 .header {
   // background-color: $fontColor;
-  background-image: linear-gradient(to right, #ff6600, #05030033),
-    url(../../img/header.jpg);
+  background-image: linear-gradient(to right, #ff6600, #050300a7),
+    url(../../img/contact.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: initial;
   background-attachment: fixed;
-  min-height: 700px;
+  min-height: 400px;
   .main {
     .row {
       display: grid;
@@ -184,40 +184,25 @@ h3 {
       }
     }
   }
-  .infor {
-    max-width: 600px;
-    text-align: left;
-    margin-top: 100px;
-    h3 {
-      font-size: 54px;
-      line-height: 64px;
-      font-weight: 600;
-      text-transform: capitalize;
-      color: #fff;
-      font-family: "Quicksand", sans-serif;
-    }
-    p {
-      font-size: 16px;
-      line-height: 28px;
-      color: #fff;
-    }
-    .btn {
-      background: transparent;
-      border: 2px solid #fff;
-      color: #fff;
-      padding: 15px 40px;
-      font-weight: 700;
-      margin-top: 30px;
-      &:hover {
-        color: $fontColor;
-        background-color: #fff;
-        transition: all 1s;
-      }
-    }
-    .btn-white {
-      @include mobile-sm {
-        margin-bottom: 20px ;
-      }
+  .path {
+    padding-top: 80px;
+    text-align: center;
+    .item {
+        .path-home {
+            color: #ff6600;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        i {
+            color: #fff;
+        }
+        .path-about {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+        }
     }
   }
 }
+

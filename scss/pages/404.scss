@@ -40,12 +40,41 @@ h6 {
       font-size: 130px;
       font-weight: 900;
     }
+    .form-inline.search-form {
+      position: relative;
+      max-width: 500px;
+      margin: auto;
+    }
+    button.btn.search {
+      color: #fff;
+      background: $fontColor;
+      font-size: 18px;
+      padding: 0 40px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 55px;
+      display: inline-block;
+      border-radius: $borderRadius;
+    }
+    .form-control {
+      color: $fontGrey;
+      padding: 12px 120px 12px 25px;
+      font-size: 18px;
+      line-height: 28px;
+      height: 55px;
+      background: $backgroundGrey;
+      border-radius: $borderRadius;
+      display: block;
+      font-weight: 500;
+    }
   }
 }
 
 .form-inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-flow: row wrap;
   align-items: center;

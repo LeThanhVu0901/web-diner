@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 @import "../themes/_variables";
 @import "../themes/_mixins";
+=======
+@import "../themes/variables";
+@import "../themes/mixins";
+>>>>>>> diner_nam
 
 .footer {
   background-color: black;
@@ -127,7 +132,10 @@
             text-decoration: none;
           }
         }
+<<<<<<< HEAD
   
+=======
+>>>>>>> diner_nam
       }
       @include tablet-md {
         text-align: center;
@@ -141,6 +149,7 @@
 }
 
 .video-footer {
+<<<<<<< HEAD
     display: block;
     .history-info {
       background: url(../../img/background-video.png) no-repeat center;
@@ -195,3 +204,57 @@
   }
 
 
+=======
+  display: block;
+  .history-info {
+    background: url(../../img/background-video.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    align-items: center;
+    min-height: 500px;
+    @include tablet-md {
+      min-height: 500px;
+    }
+    @include mobile-sm {
+      min-height: 250px;
+    }
+  }
+  .overlay {
+    content: "";
+    background: #100f1399;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  .video-content {
+    span {
+      i {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+        padding-left: 2px;
+        text-align: center;
+        line-height: 76px;
+        border-radius: 50%;
+        transition: 0.3s ease-in-out;
+        -webkit-animation: ripple 1s linear infinite;
+        animation: ripple 1s linear infinite;
+        color: #ff6600;
+        border: transparent;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+>>>>>>> diner_nam
